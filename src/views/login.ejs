@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Hola <%= nombre %>, elegiste el color: <%= color %>, tu email es: <%= email %>, y tu edad es: <%= edad %> </h3>
+    <form action="./" method="POST">
+        <div>
+            
+            <label for="nombre">Ingrese su nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <select name="color" id="color">
+                <option value="violeta">Violeta</option>
+                <option value="rojo">Rojo</option>
+                <option value="Verde">Verde</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="email">Ingrese su e-mail</label>
+            <input type="email" name="email" id="email">
+
+        </div>
+        <div>
+          <label for="edad">Ingrese su edad</label>
+        <input type="text" name="edad" id="edad">   
+        </div>
+       
+        
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
